@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'poppins', sans-serif;
+}
+
+.video-container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+#background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    background-size: cover;
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    top: 30%;
+    left: 10%;
+}
+
+.content {
+    position: absolute;
+    left: 5%;
+}
+
+h1 {
+    color: greenyellow;
+    font-size: 50px;
+    margin: 0;
+}
+
+span {
+    color: orange;
+    margin: 0%;
+}
+
+p {
+    margin: 0;
+    font-weight: 700;
+    font-size: 30px;
+    color: rgb(255, 0, 51);
+}
+.btn {
+    margin-top: 30px;
+    height: 40px;
+    border: 2px solid white;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    padding: 7px 10px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+/* Increase specificity (optional) */
+.btn:hover { 
+  background-color: white;
+  color: black;
+}
+.launch-item
+{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.launch-item p
+{
+    color: white;
+}
+.launch-item span
+{
+    color: yellow;
+}
